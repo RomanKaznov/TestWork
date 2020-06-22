@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {TextInput,View,Button,StyleSheet,Text,TouchableOpacity} from 'react-native'
+import {TextInput,View,StyleSheet,Text,TouchableOpacity} from 'react-native'
 
 
 
@@ -18,27 +18,15 @@ const translate = () => {
     <>
   <View>
 
-  <TextInput placeholder={'Русский...'}   onChangeText = {setText}   multiline = {true}   style = {styles.InputText}/>
+<TextInput placeholder={'Русский...'}   onChangeText = {setText}   multiline = {true}   style = {styles.InputText}/>
 
-  <View style = {styles.navBar}>
-  <TouchableOpacity onPress = {translate}  style = {styles.button}
-  >
-
-<Text style = {styles.buttonText}>Перевод</Text>
-
-</TouchableOpacity>
-
-
+<View style = {styles.navBar}>
+    <TouchableOpacity onPress = {translate}  style = {styles.button}>
+      <Text style = {styles.buttonText}>Перевод</Text>
+    </TouchableOpacity>
+</View>
 
   </View>
-
-
-  </View>
-
-
-
-
-
   </>
 )
 }

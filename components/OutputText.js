@@ -1,7 +1,7 @@
 import React from 'react'
-import {View,Text,StyleSheet,ScrollView} from 'react-native'
+import {View,Text,StyleSheet,} from 'react-native'
 
-//отрисовывает поля вывода текста
+// кщмонент отрисовывает поле вывода текста
 const OutputText = ({text}) => {
 
   return(

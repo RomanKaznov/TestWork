@@ -33,7 +33,7 @@ const images =  [ {
 
 
 //компонент отвечает за показ фото
-const UserPhoto = ({icon,value}) => {
+const UserPhotos = ({icon,value}) => {
 
   const images =  [ {
       // Simplest usage.
@@ -61,7 +61,7 @@ return (
 
 < ImageViewer backgroundColor = {'#ffff'}   enablePreload={true}  imageUrls= {images} / >
 
-  </View>
+</View>
 
 
   );

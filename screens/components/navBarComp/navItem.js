@@ -1,17 +1,13 @@
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
-  Text,
   Image,
-  StatusBar,
 } from 'react-native';
 
 
 
-
+// компонент отрисует иконку с текстом
 const NavItem = ({icon,value}) => {
 return (
 <>

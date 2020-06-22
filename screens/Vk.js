@@ -9,7 +9,7 @@
 import React from 'react';
 import Header from './components/Header'
 import NavBar  from './components/NavBar'
-import UserPhoto  from './components/userPhotos'
+import UserPhotos  from './components/userPhotos'
 import {
 
 RefreshControl,
@@ -18,7 +18,6 @@ RefreshControl,
   ScrollView,
   View,
   Text,
-  StatusBar,
 } from 'react-native';
 
 
@@ -27,18 +26,6 @@ function wait(timeout) {
     setTimeout(resolve, timeout);
   });
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export default function VkPadge() {
@@ -56,16 +43,13 @@ export default function VkPadge() {
 
     <SafeAreaView style={styles.wrapper}>
     <ScrollView
-
-
      refreshControl={
        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
      }
    >
-
     <Header/>
     <NavBar/>
-    <UserPhoto icon = "https://images.wallpaperscraft.ru/image/holmy_trava_vershiny_174406_300x168.jpg"/>
+    <UserPhotos icon = "https://images.wallpaperscraft.ru/image/holmy_trava_vershiny_174406_300x168.jpg"/>
 
   </ScrollView>
   </SafeAreaView>
